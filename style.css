@@ -1,0 +1,79 @@
+/* This is css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313E17;
+    margin: 0;
+    /* LEARN */
+    /* min-heigt fungsinya untuk mengetahui body itu tengah dari apa? */
+    /* 100vh itu artinya setinggi layar penuh */
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 400px;
+    background-color: #4C5C2D;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.answerSection {
+    background-color: #FFDE42;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    font-size: large;
+    text-align: right;
+    color: black;
+}
+
+.buttonSection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.btn {
+    background-color: #313E17;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* .btn-clear {
+    grid-column: span 2;
+}
+
+.special {
+    grid-column: span 2;
+}
+
+.btn-result {
+    grid-column: span 2;
+} */
+
+/* LEARN: gabungkan */
+.btn-clear,
+.special,
+.btn-result {
+    grid-column: span 2;
+}
+
+.btn-number {
+    background-color: #313E17;
+}
+
+.btn-operator,
+.btn-result,
+.btn-decimal {
+    background-color: #84b919;
+}
+
+.btn-clear {
+    background-color: #d30e0e;
+}
